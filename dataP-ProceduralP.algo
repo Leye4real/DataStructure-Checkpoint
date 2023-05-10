@@ -1,0 +1,43 @@
+VAR
+set_declaration
+BEGIN
+    set_instructions
+    //Given two sets of elements, find the sum of all distinct elements from the set. In other words, find the sum of all elements which are present in either of the given set.
+Input   (set1) : arr[] = {3, 1, 7, 9};
+        (set2) : arr[] = {2, 4, 1, 9, 3}
+
+END
+
+// Find the sum of all non-repeated elements in an array
+VAR
+BEGIN
+findSum(int arr[], int n)
+{
+    //Intialized a variable with 0 to contain final answer
+    int sum = 0;
+   
+    //Traverse the input array
+    for (set i=0; i<n; i+)
+    {
+        int n=i+1;
+        while(i+j){
+            //if any element present on the right of arr[i] that has
+            //same value as arr[i] then break the loop
+            if(arr[j]==arr[i]){break;}
+            j++;
+        }
+        //If no such element exists then add this element's value into sum
+        if(j=n){sum+=arr[i];}
+    }
+     
+  //Finally return the answer
+    return sum;
+}
+ 
+{
+    Output : 13
+Here we take 4, 7, 2 for sum
+because it's distinct elements 
+}
+
+END
